@@ -1,0 +1,8 @@
+EJERCICIO 5
+Conociendo la especifidad
+Partiendo de este Codepen de ejemplo:
+¿Por qué los enlaces son verdes y no rojos? Porque prevalece la clase ul.news li.news__item a.news__item-link sobre la clase a
+Hacer que los enlaces sean rojos. Cambiando el valor color de la clase ul.news li.news__item a.news__item-link a red
+Rehacer el HTML usando <div> en lugar de <ul> y <li>. ¿Qué pasa? Se dejan de aplicar los selectores de etiquetas <ul> y <li> y se pierde el estilo del CSS
+Comentar el CSS que no se puede tocar y reescribirlo usando solo selectores de clase, es decir, sin utilizar selectores de etiqueta. No cambia nada porque se siguen aplicando los selectores de clase
+BONUS: Cambiar ahora entre <div> y <ul>/<li>. No cambia nada porque se siguen aplicando los selectores de clase
