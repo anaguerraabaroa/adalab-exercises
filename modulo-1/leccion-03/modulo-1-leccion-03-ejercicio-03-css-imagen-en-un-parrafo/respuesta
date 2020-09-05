@@ -1,0 +1,4 @@
+Añado una imagen <img> dentro de un párrafo <p>
+Añado un selector de elemento img con las medidas en el CSS
+La imagen se queda en línea únicamente con la primera frase del párrafo y pegada al margen izquierdo de la página
+La imagen se deforma por las medidas indicadas en el ejercicio

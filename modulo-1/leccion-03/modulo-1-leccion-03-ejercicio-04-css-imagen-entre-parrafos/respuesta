@@ -1,0 +1,4 @@
+Añado un párrafo <p> entre otros dos <p>
+Añado una imagen <img> entre los dos <p>
+Añado al CSS un selector de elemento img donde incluyo las medidas de la imagen
+La <img> se coloca en el margen izquierdo de la página entre ambos <p> pero se deforma por las medidas indicadas en el ejercicio
