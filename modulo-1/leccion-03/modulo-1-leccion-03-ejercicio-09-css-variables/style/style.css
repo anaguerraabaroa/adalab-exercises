@@ -1,0 +1,52 @@
+:root {
+  --menu-links-color: blue;
+  --title-title-subtitle: darkblue;
+  --padding-header-main: 50px;
+  --margin-title-subtitle: 20px;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background-color: #eaeaea;
+  padding: var(--padding-header-main);
+}
+
+main {
+  padding: var(--padding-header-main);
+}
+
+p {
+  width: 50%;
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.title {
+  color: var(--title-title-subtitle);
+  margin: var(--margin-title-subtitle);
+}
+
+.subtitle {
+  color: var(--title-title-subtitle);
+  margin: var(--margin-title-subtitle);
+}
+
+.menu li {
+  display: inline;
+}
+
+.menu a {
+  color: var(--menu-links-color);
+  text-decoration: none;
+}
+
+p a {
+  color: var(--menu-links-color);
+}
