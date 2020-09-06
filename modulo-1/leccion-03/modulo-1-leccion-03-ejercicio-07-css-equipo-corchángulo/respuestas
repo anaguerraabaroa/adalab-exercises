@@ -1,0 +1,6 @@
+Al descomentar /*display: inline;*/ en la clase .user-info, el modelo de caja pasa a comportarse como un elemento en linea y se pierden los bloques
+Al descomentar /*display: inline-block;*/ en la clase .user-info, el modelo de caja pasa a comportarse como un elemento en línea pero manteniendo la estructura por bloques
+Al descomentar /*text-align: center;*/ el texto se centra en cada bloque
+Al descomentar /*overflow-x: scroll;*/ aparece una barra de scroll en la dirección de email que se salía del bloque
+Al descomentar /*overflow: hidden; text-overflow: ellipsis;*/ se oculta el texto de la dirección de email que se salía del bloque y se muestran puntos suspensivos para indicar que el texto continúa aunque no se muestre
+  
