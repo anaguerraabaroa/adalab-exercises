@@ -1,0 +1,22 @@
+.block {
+  background-color: mediumpurple;
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+.inline {
+  background-color: mediumpurple;
+  display: inline;
+}
+
+.inline-block {
+  background-color: mediumpurple;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+
+.hidden {
+  display: none;
+}
