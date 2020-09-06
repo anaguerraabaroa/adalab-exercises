@@ -1,0 +1,1 @@
+Al aplicar la clase .border-box con el valor box-sizing: border-box el modelo de caja cambia del modelo por defecto al modelo alternativo, donde el padding y border pasan a formar parte del tamaño de la caja, pero la imagen mantiene su tamaño original de manera que queda fuera del área de la caja
