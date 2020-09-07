@@ -1,0 +1,13 @@
+.container {
+  width: 1000px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.item {
+  box-sizing: content-box;
+  width: 200px;
+  height: 100px;
+  border: 20px solid purple;
+}

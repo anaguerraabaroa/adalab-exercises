@@ -1,0 +1,14 @@
+.container {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border: 5px solid fuchsia;
+}
+
+.item {
+  box-sizing: border-box;
+  margin: 20px;
+}
