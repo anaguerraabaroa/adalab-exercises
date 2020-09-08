@@ -1,0 +1,70 @@
+/* Superior Header: pendiente definir si vamos a incluir un logo o un texto */
+.main-header {
+  width: 100vw;
+  height: 60px;
+  background-color: blue;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #099d8d;
+  opacity: 0.95;
+}
+
+/* Inferior Header */
+.nav-menu {
+  width: 100vw;
+  height: 45px;
+  background-color: green;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.9;
+  background-color: #14d9c4;
+  padding: 8px 17px 7px 16px;
+}
+
+a.link {
+  text-decoration: none;
+}
+
+.link-about-us {
+  width: 56px;
+  font-family: Rubik;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: white;
+}
+
+.link-adalabers {
+  width: 121px;
+  font-family: Rubik;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: white;
+}
+
+.link-contact {
+  width: 80px;
+  font-family: Rubik;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: white;
+}
