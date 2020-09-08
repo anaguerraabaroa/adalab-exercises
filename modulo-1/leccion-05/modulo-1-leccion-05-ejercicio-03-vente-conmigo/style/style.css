@@ -1,0 +1,10 @@
+.main-header {
+  background: blueviolet;
+  color: white;
+  position: fixed;
+  width: 100vw;
+}
+.container {
+  position: relative;
+  top: 100px;
+}

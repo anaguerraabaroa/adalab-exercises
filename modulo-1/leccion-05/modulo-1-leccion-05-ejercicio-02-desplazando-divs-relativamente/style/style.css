@@ -1,0 +1,27 @@
+.item {
+  box-sizing: border-box;
+  width: 300px;
+  height: 300px;
+  margin: 40px;
+  padding: 30px;
+  color: white;
+  position: relative;
+}
+
+.item-1 {
+  background-color: blue;
+  left: 100px;
+  top: 50px;
+}
+
+.item-2 {
+  background-color: red;
+  right: 150px;
+  bottom: 320px;
+}
+
+.item-3 {
+  background-color: green;
+  left: 180px;
+  bottom: 240px;
+}
