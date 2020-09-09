@@ -3,29 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
     <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/main.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Rubik"
     />
-    <!-- Necesario cargar este link en el <head> cuando unifiquemos código -->
+    <title>Codeflix</title>
   </head>
   <body>
-    <header>
-      <div class="main-header">
-        <img class="group-name" src="" alt="NOMBRE DEL GRUPO" />
+    <header class="header">
+      <div class="header-name">
+        <img
+          class="logo"
+          src="https://fontmeme.com/permalink/200909/84165089e106b0066fa661862435c23b.png"
+          alt="logo codeflix"
+        />
       </div>
       <nav>
-        <div class="nav-menu">
-          <a class="link link-about-us" href="#about-us">EQUIPO</a>
-          <!-- Patricia tiene que cargar un #id en su sección para que el enlace funcione -->
-          <a class="link link-adalabers" href="#adalabers">QUIENES SOMOS</a>
-          <!-- Leire tiene que cargar un #id en su sección para que el enlace funcione -->
-          <a class="link link-contact" href="#">CONTACTO</a>
-          <!-- No podré cargar este enlace hasta que tengamos la parte del formulario -->
-        </div>
+        <ul class="header-list">
+          <li class="list-item">
+            <a class="link" href="#about">EQUIPO</a>
+          </li>
+          <li class="list-item">
+            <a class="link" href="#adalabers">QUIENES SOMOS</a>
+          </li>
+          <li class="list-item">
+            <a class="link" href="#">CONTACTO</a>
+          </li>
+        </ul>
       </nav>
     </header>
   </body>
