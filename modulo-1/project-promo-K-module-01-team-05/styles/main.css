@@ -38,8 +38,10 @@
   text-decoration: none;
   font-family: "Rubik", sans-serif;
   font-size: 15px;
-  line-height: 30px;
+  line-height: 2;
 }
+
+/* mediaqueries tablet*/
 
 @media all and (min-width: 768px) {
   .header-team-name {
@@ -58,5 +60,19 @@
   }
   .link {
     line-height: 1.88;
+  }
+}
+
+/* mediaqueries desktop*/
+
+@media all and (min-width: 1200px) {
+  .header-team-name {
+    padding: 15px 0 15px 142px;
+  }
+  .header-list {
+    padding: 16px 138px 14px 0;
+  }
+  .link {
+    line-height: 2;
   }
 }
