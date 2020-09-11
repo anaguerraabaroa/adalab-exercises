@@ -13,7 +13,7 @@
 
 /* header: contenedor nombre del grupo */
 .header-team-name {
-  display: block;
+  display: flex;
   text-align: center;
   padding: 15px 80px 15px 80px;
   background-color: #099d8d;
@@ -27,15 +27,20 @@
 /* header: contenedor menú navegación */
 .header-list {
   display: flex;
-  flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
-  list-style-type: none;
   padding: 8px 17px 7px 16px;
   background-color: #14d9c4;
 }
 
 /* header: elementos del contenedor menú navegación */
+
+.list-item {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
 .link {
   color: #ffffff;
   text-decoration: none;
@@ -44,21 +49,19 @@
   line-height: 2;
 }
 
-/* mediaqueries tablet*/
+/* mediaqueries tablet*: la fusión de las dos cabeceras se debe hacer así*/
 
 @media all and (min-width: 768px) {
   .header-team-name {
-    display: flex;
     text-align: left;
     padding: 15px 0 15px 45px;
   }
   .header-list {
-    width: 40%;
-    background-color: #099d8d;
-    justify-content: space-around;
     position: absolute;
     top: 5%;
     right: 0;
+    width: 45%;
+    background-color: #099d8d;
     padding: 16px 45px 14px 0;
   }
   .link {
@@ -73,6 +76,7 @@
     padding: 15px 0 15px 142px;
   }
   .header-list {
+    width: 35%;
     padding: 16px 138px 14px 0;
   }
   .link {
