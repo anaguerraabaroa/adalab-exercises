@@ -1,9 +1,13 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 /* header: contenedor principal */
 .header {
   position: fixed;
   top: 0;
   width: 100%;
-  box-sizing: border-box;
   opacity: 0.95;
 }
 
@@ -27,7 +31,6 @@
   justify-content: space-around;
   align-items: center;
   list-style-type: none;
-  margin: 0;
   padding: 8px 17px 7px 16px;
   background-color: #14d9c4;
 }
