@@ -39,6 +39,7 @@
   display: flex;
   justify-content: space-around;
   list-style-type: none;
+  text-transform: capitalize;
 }
 
 .link {
@@ -49,7 +50,7 @@
   line-height: 2;
 }
 
-/* mediaqueries tablet*: la fusión de las dos cabeceras se debe hacer así*/
+/* mediaqueries tablet*: la fusión de las dos cabeceras se debe hacer así??*/
 
 @media all and (min-width: 768px) {
   .header-team-name {
