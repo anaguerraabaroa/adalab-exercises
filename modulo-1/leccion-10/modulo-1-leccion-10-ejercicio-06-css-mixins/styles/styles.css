@@ -1,0 +1,12 @@
+@mixin t($fontsize) {
+  font-size: $fontSize;
+  .title {
+    @include t(18px);
+  }
+}
+
+@mixin d($fontsize) {
+  .title {
+    @include d(20px);
+  }
+}
