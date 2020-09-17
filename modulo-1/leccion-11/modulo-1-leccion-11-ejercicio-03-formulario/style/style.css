@@ -1,0 +1,19 @@
+* {
+  padding: 5px;
+}
+
+.form-contact {
+  display: block;
+}
+
+.gender {
+  display: inline;
+}
+
+.info {
+  display: inline;
+}
+
+.comments {
+  display: block;
+}

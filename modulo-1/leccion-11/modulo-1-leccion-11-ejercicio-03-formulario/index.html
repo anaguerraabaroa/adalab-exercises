@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <form action="/signup" method="post">
+      <div class="form-name">
+        <h1>Create an account</h1>
+        <h2>It's free and always will be</h2>
+        <input type="text" name="firstName" placeholder="First Name" />
+        <input type="text" name="surname" placeholder="Surname" />
+      </div>
+      <div>
+        <input
+          class="form-contact"
+          type="text"
+          name="email-mobile"
+          placeholder="Email or mobile number"
+        />
+        <input
+          class="form-contact"
+          type="text"
+          name="confirm-email-mobile"
+          placeholder="Re-enter email or mobile number"
+        />
+        <input
+          class="form-contact"
+          type="password"
+          name="password"
+          placeholder="New password"
+        />
+      </div>
+      <div class="birthday">
+        <h2>Birthday</h2>
+        <select name="date">
+          <option value="day">Day</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+        <select name="month">
+          <option value="month">Month</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+        <select name="year">
+          <option value="year">Year</option>
+          <option value="1">2010</option>
+          <option value="2">2011</option>
+          <option value="3">2012</option>
+          <option value="4">2013</option>
+          <option value="5">2014</option>
+          <option value="6">2015</option>
+          <option value="7">2016</option>
+          <option value="8">2017</option>
+          <option value="9">2018</option>
+          <option value="10">2019</option>
+          <option value="10">2020</option>
+        </select>
+        <div class="info">
+          <small>Why do I need to provide my date of birth?</small>
+        </div>
+      </div>
+      <div class="gender">
+        <label for="gender-female">
+          <input
+            id="gender-female"
+            type="radio"
+            value="female"
+            name="gender-female"
+          />
+          Female
+        </label>
+      </div>
+      <div class="gender">
+        <label for="gender-male">
+          <input
+            id="gender-male"
+            type="radio"
+            value="male"
+            name="gender-male"
+          />
+          Male
+        </label>
+      </div>
+      <div>
+        <small
+          >By clicking Create an account, you agree to our Terms and that you
+          have read our Data Policy, Including our Cookie Use.</small
+        >
+      </div>
+      <div>
+        <input type="hidden" id="browser" name="browser" value="Chrome" />
+      </div>
+      <div>
+        <label for="height">Altura:</label>
+        <input
+          type="number"
+          id="height"
+          name="height"
+          min="50"
+          max="250"
+          value="150"
+        />
+      </div>
+      <div>
+        <label for="comments">Comentarios:</label>
+        <textarea
+          class="comments"
+          id="comments"
+          name="comments"
+          rows="8"
+          cols="80"
+        ></textarea>
+      </div>
+      <div>
+        <label for="terms">
+          <input id="terms" type="checkbox" value="terms" name="terms" />
+          <small>Acepto los términos y condiciones de Facebook</small>
+        </label>
+      </div>
+      <div>
+        <input type="submit" value="Create an account" />
+      </div>
+    </form>
+  </body>
+</html>
