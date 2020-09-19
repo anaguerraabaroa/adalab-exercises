@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+}
+
+.wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.item {
+  background: deeppink;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: blanchedalmond;
+}
+
+.container1 {
+  height: 20hv;
+  grid-column: 1 / 13;
+  background-color: pink;
+}
+
+.container2 {
+  height: 60vh;
+  grid-column: 1 / 4;
+  background-color: indigo;
+}
+
+.container3 {
+  height: 60vh;
+  grid-column: 4 / 13;
+  background-color: indianred;
+}
+
+.container4 {
+  height: 20vh;
+  grid-column: 1 / 13;
+  background-color: powderblue;
+}

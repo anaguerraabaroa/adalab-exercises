@@ -1,0 +1,28 @@
+.container-fluid {
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  font-size: 30px;
+  color: blanchedalmond;
+  text-align: center;
+}
+
+.header {
+  height: 20vh;
+  background-color: pink;
+}
+
+.menu {
+  height: 60vh;
+  background-color: indigo;
+}
+
+.content {
+  height: 60vh;
+  background-color: indianred;
+}
+
+.footer {
+  height: 20vh;
+  background-color: lightsteelblue;
+}
