@@ -1,0 +1,25 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px 100px 50px;
+  grid-template-areas: "header header" "main aside" "footer footer";
+  grid-gap: 5px;
+}
+.item {
+  background: #89ece1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item--header {
+  grid-column: 1 / 3;
+}
+.item--main {
+  grid-column: 1 / 2;
+}
+.item--aside {
+  grid-column: 2 / 3;
+}
+.item--footer {
+  grid-area: footer;
+}
