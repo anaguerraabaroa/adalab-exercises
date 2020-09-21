@@ -1,0 +1,2 @@
+¿Qué pasa si muevo el ratón sobre varias cards a la vez?
+La sombra se aplica al pasar por encima de las cajas porque la transición es de un segundo, pero el color de fondo no llega a cambiar del todo porque la transición es de 5 segundos.
