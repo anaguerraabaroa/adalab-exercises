@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: blueviolet;
+  justify-content: center;
+}
+
+.main__container {
+  display: flex;
+  width: 20%;
+  height: 20%;
+  background-color: yellow;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation-name: title;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.main__title {
+  font-size: 50px;
+  color: blueviolet;
+  animation-name: title;
+}
+
+@keyframes title {
+  from {
+    opacity: 0;
+    transform: translate(0, -60px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 50vh);
+  }
+}
