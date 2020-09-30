@@ -1,0 +1,12 @@
+.button {
+  color: rebeccapurple;
+  padding: 10px;
+  background-color: mediumslateblue;
+  border: 5px solid rebeccapurple;
+  border-radius: 20px;
+  font-weight: 700;
+}
+
+.opacity {
+  opacity: 0.5;
+}
