@@ -1,5 +1,5 @@
 "use strict";
-const sumElement = document.querySelector(".suma");
+const sumElement = document.querySelector(".sum");
 const item1 = 2;
 const price1 = 5;
 const item2 = 3;
@@ -10,4 +10,8 @@ sumElement.innerHTML = item1 * price1 + item2 * price2 + item3 * price3;
 
 /* Mensaje que aparece en la consola al loguear sumElement
 console.log(sumElement);
-<p class=​"suma">​18​</p>​ */
+<p class=​"suma">​18​</p>​ 
+
+Mensaje que aparece en la consola al loguear las constantes
+console.log(item1 * price1 + item2 * price2 + item3 * price3);
+18 */

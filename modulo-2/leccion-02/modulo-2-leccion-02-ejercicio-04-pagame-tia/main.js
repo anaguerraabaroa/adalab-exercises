@@ -1,21 +1,25 @@
 "use strict";
-// Precio a pagar por cada comensal
-const sumElement = document.querySelector(".suma");
+const sumElement = document.querySelector(".sum");
 const totalPrice = 128;
 const numberOfCustomers = 9;
 const specialPrice = 2;
-sumElement.innerHTML = (totalPrice - specialPrice) / numberOfCustomers;
+//Precio a pagar por comensal
+sumElement.innerHTML = totalPrice / numberOfCustomers - specialPrice;
+//Precio a pagar por Ana
+sumElement.innerHTML = totalPrice / numberOfCustomers + specialPrice;
 
-/* Mensaje que aparece en la consola al loguear sumElement
+/* Mensaje que aparece en la consola al loguear sumElement por comensal
 console.log(sumElement);
-<p class=​"suma">​14​</p>​ */
+<p class=​"sum">​12.222222222222221​</p>​
 
-/* Precio a pagar por Ana
-const totalPrice = 128;
-const numberOfCustomers = 9;
-const specialPrice = 2;
-sumElement.innerHTML = (totalPrice + specialPrice) / numberOfCustomers;
+Mensaje que aparece en la consola al loguear las constantes por comensal
+console.log(totalPrice / numberOfCustomers - specialPrice);
+12.222222222222221 */
 
-Mensaje que aparece en la consola al loguear sumElement
+/* Mensaje que aparece en la consola al loguear sumElement para la parte de Ana
 console.log(sumElement);
-<p class=​"suma">​14.444444444444445​</p>​ */
+<p class=​"sum">​16.22222222222222​</p>​ 
+
+/* Mensaje que aparece en la consola al loguear las constantes para la parte de Ana
+console.log(totalPrice / numberOfCustomers + specialPrice);
+16.22222222222222 */
