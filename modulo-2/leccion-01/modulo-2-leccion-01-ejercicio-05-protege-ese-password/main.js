@@ -2,7 +2,7 @@
 
 // Versión 1
 const passwordElement = document.querySelector(".password");
-passwordElement.innerHTML = "Mi contraseña es: ****";
+passwordElement.innerHTML = "*******";
 
 /* Versión 2 
 const passwordElement = document.querySelector(".password");
