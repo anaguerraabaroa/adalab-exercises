@@ -7,11 +7,8 @@ const price2 = 2;
 const item3 = 0.5;
 const price3 = 4;
 sumElement.innerHTML = item1 * price1 + item2 * price2 + item3 * price3;
-
-/* Mensaje que aparece en la consola al loguear sumElement
 console.log(sumElement);
-<p class=​"suma">​18​</p>​ 
 
-Mensaje que aparece en la consola al loguear las constantes
+/* Mensaje que aparece en la consola al loguear las constantes
 console.log(item1 * price1 + item2 * price2 + item3 * price3);
 18 */
