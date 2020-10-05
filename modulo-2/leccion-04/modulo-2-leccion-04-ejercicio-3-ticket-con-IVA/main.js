@@ -1,13 +1,9 @@
 "use strict";
 
-function price(number) {
-  return number;
+function priceIva(price) {
+  const iva = price * 0.21;
+  const total = price + iva;
+  console.log(`Precio sin IVA: ${price}; IVA: ${iva}; Total: ${total}`);
 }
 
-const number = 20;
-const IVA = (number * 21) / 100;
-const priceWoIVA = number - IVA;
-const priceResult =
-  "Precio sin IVA: " + priceWoIVA + ", IVA: " + IVA + " y Total: " + number;
-
-console.log(priceResult);
+let totalPrice = priceIva(100);
