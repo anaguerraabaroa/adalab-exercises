@@ -1,0 +1,7 @@
+.alert {
+  background-color: orange;
+  color: white;
+  border: 2px solid orange;
+  width: 100px;
+  height: 20px;
+}
