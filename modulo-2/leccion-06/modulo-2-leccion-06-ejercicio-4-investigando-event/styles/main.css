@@ -1,0 +1,7 @@
+.button {
+  background-color: slateblue;
+  border: 5px solid darkslateblue;
+  color: white;
+  width: 200px;
+  border-radius: 20px;
+}
