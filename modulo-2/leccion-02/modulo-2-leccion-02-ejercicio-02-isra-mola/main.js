@@ -1,6 +1,8 @@
 "use strict";
-const numberElement = document.querySelector(".sum");
-const numberElement1 = 4;
-const numberElement2 = 5;
-numberElement.innerHTML = numberElement1 + numberElement2;
-console.log(numberElement);
+const superWave = document.querySelector(".super-wave");
+superWave.classList.add("innerText");
+console.log(superWave);
+
+/* Mensaje que aparece en la consola al loguear superWave
+console.log(superWave);
+<span class=​"super-wave innerText">​OLA!​</span> ​*/
