@@ -1,5 +1,4 @@
 "use strict";
-// Precio a pagar por cada comensal
 const totalHours = document.querySelector(".sum");
 const hoursPerDay = 24;
 const daysPerYear = 365;
