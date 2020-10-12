@@ -9,13 +9,10 @@ function updateClick() {
   const selectValue = select.value;
   titleElement.innerHTML = selectValue;
   const random = parseInt(Math.random() * 100); 
-  console.log(random);
   if (random % 2 === 0) {
-    mainElement.classList.add("mainBackgroundColor1");
     mainElement.classList.remove("mainBackgroundColor2");
   } else if (random % 2 === 1)
-  mainElement.classList.add("mainBackgroundColor2");
-  mainElement.classList.remove("mainBackgroundColor1");
+  mainElement.classList.add("mainBackgroundColor2")
 }
 
 buttonElement.addEventListener("click", updateClick);
