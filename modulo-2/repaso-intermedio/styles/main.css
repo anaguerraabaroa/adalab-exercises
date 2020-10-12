@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 .main {
   background-color: #ffcc00;
@@ -18,7 +19,6 @@ body {
 }
 
 .select {
-  margin-right: 5px;
   width: 65px;
   padding: 5px 5px;
   border-radius: 5px;

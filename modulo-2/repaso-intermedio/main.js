@@ -18,4 +18,4 @@ function updateClick() {
   mainElement.classList.remove("mainBackgroundColor1");
 }
 
-buttonElement.addEventListener("click", updateClick)
+buttonElement.addEventListener("click", updateClick);
