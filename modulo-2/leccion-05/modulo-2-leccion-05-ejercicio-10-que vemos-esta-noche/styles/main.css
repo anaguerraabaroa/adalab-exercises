@@ -1,0 +1,15 @@
+.button {
+  width: 200px;
+  height: 50px;
+  border: 5px solid darkslateblue;
+  background-color: slateblue;
+  color: white;
+  border-radius: 50px;
+  font-size: 20px;
+  outline: none;
+}
+
+.btn {
+  background-color: yellow;
+  color: darkslateblue;
+}

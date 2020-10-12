@@ -4,7 +4,7 @@ const input = document.querySelector(".input");
 const text = document.querySelector(".text");
 
 function getInputValue() {
-  const inputValue = input.value;
+  const inputValue = event.currentTarget.value;
   text.innerHTML = inputValue;
 }
 
