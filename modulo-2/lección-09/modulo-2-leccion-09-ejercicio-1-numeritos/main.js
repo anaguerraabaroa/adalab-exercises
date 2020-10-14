@@ -13,7 +13,8 @@ function get100Numbers() {
   return array;
 }
 
+// Invocamos a la función
 get100Numbers();
 
-// Logueamos para confirmar en consola que el array está completo
-console.log(array);
+// Y logueamos para confirmar en consola que los elementos se han añadido al array
+console.log(arrayNumbers);
