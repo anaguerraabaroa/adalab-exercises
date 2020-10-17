@@ -8,7 +8,6 @@ for (let i = 0; i < 10; i++) {
 }
 
 // acc = 0;
-
 // for (let i = 0; i < 10; i += 2) {
 //   acc++;
 //   console.log(`El resultado es ${acc}`);

@@ -25,17 +25,16 @@
 
 // console.log("La media de los números es " + media);
 
-
 // Ejercicio c
 
-let numbers = [2 , 4, 6, 8, 10];
+let numbers = [2, 4, 6, 8, 10];
 
 function average(n) {
   let media = 0;
   for (let i = 0; i < n.length; i++) {
-    media += n[i]/n.length;
-  } 
-  return media
+    media += n[i] / n.length;
+  }
+  return media;
 }
 
 console.log(`La media de los números es ${average(numbers)}`);
