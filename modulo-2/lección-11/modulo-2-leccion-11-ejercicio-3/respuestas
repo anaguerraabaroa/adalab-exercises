@@ -1,0 +1,11 @@
+dónde está el método de petición: Header/RequestMethod/GET
+el código de la respuesta (recuerda que 200 es OK): 200/OK
+en las cabeceras de la petición busca una llamada user-agent, ¿qué puedes decir de su contenido?: versión del navegador soportada
+la respuesta del servidor en JSON: 
+{count: 1, next: null, previous: null,…}
+count: 1
+next: null
+previous: null
+results: [{name: "Luke Skywalker", height: "172", mass: "77", hair_color: "blond", skin_color: "fair",…}]
+0: {name: "Luke Skywalker", height: "172", mass: "77", hair_color: "blond", skin_color: "fair",…}
+al recargar la página aparecen un montón de peticiones en la pestaña Network, ¿sabrías filtrar solo las que son de AJAX? Pista: antes de fetch las peticiones se hacían con el objeto XMLHttpRequest (XHR): filtrando por XHR
