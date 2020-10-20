@@ -11,9 +11,10 @@ const paragraphElement = document.querySelector(".js-paragraph");
 function getUserName() {
   localStorage.setItem("name", inputElement.value);
   paragraphElement.innerHTML = inputElement.value;
+  useUserName();
 }
 
-// 2.- Declaramos el evento que activará la función handler
+// // 2.- Declaramos el evento que activará la función handler
 inputElement.addEventListener("keyup", getUserName);
 
 // 4.- Declaramos la función que va a utilizar los datos almacenados en local
@@ -27,10 +28,10 @@ function useUserName() {
 // 4.3.- Invocamos a la función desde fuera para que se ejecute
 useUserName();
 
-// 5.- Declaramos la función para borrar los datos almacenados en local
+// // 5.- Declaramos la función para borrar los datos almacenados en local
 function removeUserName() {
   localStorage.removeItem("name");
 }
 
-// 5.1.- Invocamos a la función desde fuera para que se ejecute
+// // 5.1.- Invocamos a la función desde fuera para que se ejecute
 removeUserName();
