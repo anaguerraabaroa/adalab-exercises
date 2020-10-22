@@ -5,6 +5,11 @@ Pasos a seguir para realizar el ejercicio:
 [x] Pintar la paleta en HTML
 [x] Aplicar estilos con CSS
 [X] Pintar todas las paleta
-[] Marcar como favoritas las paletas que seleccione el usuario
+[x] Marcar como favoritas las paletas que seleccione el usuario
+[x] Escuchar evento
+[x] Identificar el elemento clickado (cada una de las naves/paletas)
+[x] Guardar los favoritos en un array
+[X] Verificar si tienen la clase de favoritos y añadir la clase para incluirlo en el array
+[X] Verificar si tienen la clase de favoritos y eliminarla para incluirlo en el array
 [] Crear un buscador que filtre por nombre
-[] Guardar/cachear datos en LocalStorage
+[X] Guardar/cachear datos en LocalStorage
