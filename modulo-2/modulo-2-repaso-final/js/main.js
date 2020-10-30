@@ -25,7 +25,7 @@ function getData() {
     para manipular los datos como necesitemos */
 
     .then(function (data) {
-      /* Paso 6: console.log(data); --> Consolear el parámetro de la función seguido de alguno de los valores del objeto que contiene (.version, .palettes) 
+      /* Paso 6:  --> Consolear el parámetro de la función seguido de alguno de los valores del objeto que contiene (.version, .palettes) 
       para confirmar que podemos acceder a todos los datos del archivo .json */
 
       /* Paso 7: Como la información que realmente nos interesa del objeto que nos devuelve el archivo .json es la de palettes, lo mejor es simplificar
@@ -112,7 +112,6 @@ la función listenPalette desde la función favouritesPalette.
     let classF;
     const favouriteIndex = favouritesLis.indexOf(i);
     const favourite = favouriteIndex !== -1;
-
     if (favourite === true) {
       classF = "palettes__item--favourite";
     } else {
