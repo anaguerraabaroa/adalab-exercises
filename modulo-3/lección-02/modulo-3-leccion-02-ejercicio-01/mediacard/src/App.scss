@@ -1,6 +1,8 @@
+@import "vars";
+
 .App {
-  background-color: white;
-  font-family: "Open Sans", sans-serif;
+  background-color: $bgApp;
+  font-family: $fontFamily;
   padding: 20px;
 }
 
@@ -19,17 +21,17 @@
 }
 
 .App-name {
-  color: black;
+  color: $fontColorPrimary;
   font-size: 30px;
 }
 
 .App-date {
-  color: grey;
+  color: $fontColorSecondary;
   font-size: 16px;
 }
 
 .App-text {
-  color: grey;
+  color: $fontColorSecondary;
   font-size: 20px;
   margin: 20px;
 }
@@ -47,7 +49,7 @@
 }
 
 .App-info {
-  color: #d5d5d5;
+  color: $fontColorTerciary;
   font-size: 20px;
 }
 
@@ -60,10 +62,10 @@
 }
 
 .App-likesNumber {
-  color: black;
+  color: $fontColorPrimary;
   margin-right: 10px;
 }
 
 .App-icon {
-  color: red;
+  color: $fontColorIcon;
 }

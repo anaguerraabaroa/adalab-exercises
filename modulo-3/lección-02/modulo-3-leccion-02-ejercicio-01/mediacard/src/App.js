@@ -1,9 +1,10 @@
+import React, { Component } from "react";
 import avatar from "./avatar.jpg";
-import "./App.css";
+import "./App.scss";
 
-function App() {
-  return (
-    <div className="App">
+class App extends Component {
+  render() {
+    const header = (
       <header className="App-header">
         <img src={avatar} className="App-avatar" alt="Avatar" />
         <div className="App-title">
@@ -11,6 +12,8 @@ function App() {
           <h2 className="App-date">Domingo 1 de noviembre de 2020</h2>
         </div>
       </header>
+    );
+    const paragraph = (
       <p className="App-text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -20,6 +23,8 @@ function App() {
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit anim id est laborum.
       </p>
+    );
+    const small = (
       <small className="App-small">
         <p className="App-info">Leer más...</p>
         <div className="App-likes">
@@ -27,8 +32,14 @@ function App() {
           <i className="App-icon fas fa-heart"></i>
         </div>
       </small>
-    </div>
-  );
+    );
+    const appRoot = (
+      <div className="App">
+        {header} {paragraph} {small}
+      </div>
+    );
+    return appRoot;
+  }
 }
 
 export default App;
