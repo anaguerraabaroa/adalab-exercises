@@ -1,8 +1,10 @@
 import React from "react";
+// import React, {Component} from "react" --> Otra forma de escribirlo junto con el comentario de abajo
 import avatar from "./avatar.jpg";
 import "./App.scss";
 
 class App extends React.Component {
+  // class App extends React.Component { --> Otra forma de escribirlo junto con el comentario de arriba
   render() {
     const header = (
       <header className="App-header">
