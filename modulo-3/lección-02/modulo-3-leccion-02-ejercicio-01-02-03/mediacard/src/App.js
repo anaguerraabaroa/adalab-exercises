@@ -5,6 +5,11 @@ import "./App.scss";
 
 class App extends React.Component {
   // class App extends Component { --> Otra forma de escribirlo junto con el comentario de arriba
+  // El constructor lo usamos sólo cuando tengamos que extraer propiedades de la superclase o cuando tengamos que usar propiedades de la subclase
+  // constructor(props) {
+  //   super(props);
+  // }
+
   render() {
     const header = (
       <header className="App-header">
