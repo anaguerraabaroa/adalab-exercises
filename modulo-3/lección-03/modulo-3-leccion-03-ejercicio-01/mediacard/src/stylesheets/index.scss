@@ -1,0 +1,11 @@
+@import "vars";
+
+body {
+  margin: 0;
+  background-color: $bgBody;
+  padding: 30px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
