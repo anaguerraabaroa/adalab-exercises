@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import avatar from "./avatar.jpg";
 import "./App.scss";
 
-class App extends Component {
+class App extends React.Component {
   render() {
     const header = (
       <header className="App-header">
