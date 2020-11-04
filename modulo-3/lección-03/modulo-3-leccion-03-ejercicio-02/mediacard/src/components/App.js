@@ -9,8 +9,8 @@ class App extends React.Component {
       <div className="App">
         <header className="App-header"></header>
         <MediaCard
-          name="Ana Guerra"
           image={avatar}
+          name="Ana Guerra"
           date="Domingo 1 de noviembre de 2020"
           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
