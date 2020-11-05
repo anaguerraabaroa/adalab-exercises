@@ -32,15 +32,10 @@ const arrayOfItems = [
   },
 ];
 
-/* Ejercicio 1A: Para pintar un listado de datos React necesita que se recorra un array.
-Utilizamos un método map para recorrer el array original y crear un nuevo array con los datos de cada objeto 
-que tenemos que pasar al componente para pintarlo
-Por otro lado, React solicita un identificador único por elemento para poder identificar el elemento que ha cambiado
-y debe renderizar. Para ello lo recomendable es usar el id, pero como en este caso no contamos con ese dato devolvemos
-como parámetro al método map el index (posición del elemento dentro del array) y lo usamos en el componente con el
-atributo key 
-
 const listOfItems = arrayOfItems.map((item, index) => {
+  Item.defaultProps = {
+    description: "No hay descripción",
+  };
   return (
     <Item
       key={index}
@@ -56,29 +51,6 @@ const listOfItems = arrayOfItems.map((item, index) => {
 class ItemList extends React.Component {
   render() {
     return <ul className="item-list">{listOfItems}</ul>;
-  }
-}*/
-
-/*Ejercicio 1B: primero filtramos el array para quedarnos solamente con los productos de precio inferior a 10 con el 
-método filter y después creamos un nuevo array con estos productos con el método map*/
-
-const listOfItems = arrayOfItems.filter((item) => item.price < 10);
-const filterList = listOfItems.map((item, index) => {
-  return (
-    <Item
-      key={index}
-      name={item.name}
-      description={item.description}
-      quantity={item.quantity}
-      category={item.quantity}
-      price={item.price}
-    />
-  );
-});
-
-class ItemList extends React.Component {
-  render() {
-    return <ul className="item-list">{filterList}</ul>;
   }
 }
 
