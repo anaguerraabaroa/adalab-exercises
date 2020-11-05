@@ -3,7 +3,7 @@ import "../stylesheets/_Destiny.scss";
 
 class Destiny extends React.Component {
   /* We handle an alert when user choose a destination option*/
-  onChangeListener(event) {
+  handleOnChange(event) {
     const selectedCity = event.target.value;
     return alert(`Your next destination is ${selectedCity}!`);
   }
@@ -14,7 +14,7 @@ class Destiny extends React.Component {
         <form class="form">
           <label for="select">Select your next destination:</label>
           {/* We add a listener on the select element */}
-          <select id="select" name="select" onChange={this.onChangeListener}>
+          <select id="select" name="select" onChange={this.handleOnChange}>
             <option value="Your destination" disabled selected>
               Your destination
             </option>

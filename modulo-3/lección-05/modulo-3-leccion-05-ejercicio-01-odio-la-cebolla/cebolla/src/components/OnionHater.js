@@ -3,7 +3,7 @@ import "../stylesheets/_onionHater.scss";
 
 class OnionHater extends React.Component {
   /* We use a method to handle an alert when user writes "onion" on the textarea*/
-  onChangeListener(event) {
+  handleonChange(event) {
     const keyWord = event.target.value;
     if (keyWord.includes("onion")) {
       return alert("I HATE ONIONS!!!");
@@ -19,7 +19,7 @@ class OnionHater extends React.Component {
           </label>
           {/* We add a listener on the textarea */}
           <textarea
-            onChange={this.onChangeListener}
+            onChange={this.handleonChange}
             id="comments"
             name="comments"
             rows="8"
