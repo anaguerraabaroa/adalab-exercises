@@ -25,7 +25,7 @@ const arrayOfItems = [
   },
   {
     name: "Galletas de chocolate",
-    description: "Galletas rellenas de chocolate",
+    //description: "Galletas rellenas de chocolate",
     quantity: 3,
     category: "Galletas",
     price: 7,
@@ -33,9 +33,6 @@ const arrayOfItems = [
 ];
 
 const listOfItems = arrayOfItems.map((item, index) => {
-  Item.defaultProps = {
-    description: "No hay descripción",
-  };
   return (
     <Item
       key={index}

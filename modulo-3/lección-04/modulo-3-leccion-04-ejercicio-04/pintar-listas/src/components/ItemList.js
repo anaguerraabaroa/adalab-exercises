@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Item from "../components/Item";
 
 const arrayOfItems = [
@@ -41,13 +40,6 @@ const arrayOfItems = [
 ];
 
 const listOfItems = arrayOfItems.map((item, index) => {
-  Item.propTypes = {
-    name: PropTypes.isRequired,
-    price: PropTypes.number.isRequired,
-  };
-  Item.defaultProps = {
-    description: "No hay descripción",
-  };
   return (
     <Item
       key={index}
