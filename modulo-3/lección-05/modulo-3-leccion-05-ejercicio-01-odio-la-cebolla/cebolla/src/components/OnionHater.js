@@ -2,6 +2,11 @@ import React from "react";
 import "../stylesheets/_onionHater.scss";
 
 class OnionHater extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleonChange = this.handleonChange.bind(this);
+  }
+
   /* We use a method to handle an alert when user writes "onion" on the textarea*/
   handleonChange(event) {
     const keyWord = event.target.value;
