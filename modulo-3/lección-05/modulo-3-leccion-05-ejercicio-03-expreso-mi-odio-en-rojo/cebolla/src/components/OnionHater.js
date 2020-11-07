@@ -5,28 +5,28 @@ class OnionHater extends React.Component {
   constructor(props) {
     super(props);
     this.isHating = false;
+    this.formClass = "";
     this.handleonChange = this.handleonChange.bind(this);
   }
 
   handleonChange(event) {
-    this.forceUpdate();
-    const formElement = document.querySelector(".form");
     const keyWord = event.target.value;
     const keyWordToLowerCase = keyWord.toLowerCase();
     if (keyWordToLowerCase.includes("onion")) {
-      formElement.classList.add("form__color");
       this.isHating = true;
+      this.formClass = "form__color";
     } else {
-      formElement.classList.remove("form__color");
       this.isHating = false;
+      this.formClass = "";
     }
+    this.forceUpdate();
   }
 
   render() {
     return (
       <>
-        <form class="form">
-          <label for="comments" class="comments">
+        <form className={"form " + this.formClass}>
+          <label htmlFor="comments" className="comments">
             Comentarios:
           </label>
           {/* We add a listener on the textarea */}

@@ -4,13 +4,13 @@ import "../stylesheets/_onionHater.scss";
 class OnionHater extends React.Component {
   constructor(props) {
     super(props);
-    this.handleonChange = this.handleonChange.bind(this);
+    this.handleOnChange = this.handleOnChange.bind(this);
   }
 
   /* We use a method to handle an alert when user writes "onion" on the textarea*/
-  handleonChange(event) {
+  handleOnChange(event) {
     const keyWord = event.target.value;
-    if (keyWord.includes("onion")) {
+    if (keyWord.includes("onions")) {
       return alert("I HATE ONIONS!!!");
     }
   }
@@ -18,13 +18,13 @@ class OnionHater extends React.Component {
   render() {
     return (
       <>
-        <form class="form">
-          <label for="comments" class="comments">
+        <form className="form">
+          <label htmlFor="comments" className="comments">
             Comentarios:
           </label>
           {/* We add a listener on the textarea */}
           <textarea
-            onChange={this.handleonChange}
+            onChange={this.handleOnChange}
             id="comments"
             name="comments"
             rows="8"
