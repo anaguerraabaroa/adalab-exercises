@@ -13,7 +13,7 @@ class CityImage extends React.Component {
         "https://viajesexplorer.es/wp-content/uploads/2019/02/imagen_9020675_20181213175310.jpg",
       Boston:
         "https://www.viajablog.com/wp-content/uploads/2019/04/boston-3690818_1280.jpg",
-      Tokio: "https://azturismo.mx/wp-content/uploads/2018/10/Tokio.jpg",
+      Tokio: "https://www.sitspain.com/wp-content/uploads/2018/09/Tokio.jpg",
     };
   }
 
