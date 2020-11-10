@@ -11,7 +11,7 @@ class SheepCounter extends React.Component {
   }
 
   handleClick() {
-    this.setState((prevState, props) => {
+    this.setState((prevState) => {
       prevState = prevState.acc + 1;
       return {
         acc: prevState,

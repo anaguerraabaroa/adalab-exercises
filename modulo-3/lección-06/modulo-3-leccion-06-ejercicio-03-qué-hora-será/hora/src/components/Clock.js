@@ -4,9 +4,9 @@ class Clock extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      getHours: "",
-      getMinutes: "",
-      getSeconds: "",
+      hours: "",
+      minutes: "",
+      seconds: "",
     };
     this.updateClock = this.updateClock.bind(this);
     setInterval(this.updateClock, 1000);
@@ -15,17 +15,16 @@ class Clock extends React.Component {
   updateClock() {
     const date = new Date();
     this.setState({
-      getHours: date.getHours(),
-      getMinutes: date.getMinutes(),
-      getSeconds: date.getSeconds(),
+      hours: date.getHours(),
+      minutes: date.getMinutes(),
+      seconds: date.getSeconds(),
     });
   }
 
   render() {
     return (
       <p className="clock">
-        {this.state.getHours} : {this.state.getMinutes} :{" "}
-        {this.state.getSeconds}
+        {this.state.hours} : {this.state.minutes} : {this.state.seconds}
       </p>
     );
   }

@@ -12,7 +12,7 @@ class SheepCounter extends React.Component {
   }
 
   handleClick() {
-    this.setState((prevState, prevStateImg, props) => {
+    this.setState((prevState, prevStateImg) => {
       prevState = prevState.acc + 1;
       prevStateImg =
         "http://www.clker.com/cliparts/e/4/8/7/13280460782141411990Cartoon%20Sheep.svg.hi.png";
