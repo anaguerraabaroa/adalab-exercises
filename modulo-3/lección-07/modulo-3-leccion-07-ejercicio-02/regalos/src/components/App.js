@@ -4,7 +4,7 @@ import Gifts from "./Gifts";
 import "../stylesheets/App.scss";
 
 const App = (props) => {
-  const [counter, setCounter] = useState(0);
+  const [counter, setCounter] = useState(20);
   const [giftsCounter, setGiftCounter] = useState(0);
   const handleCount = () => {
     setCounter(counter + 1);

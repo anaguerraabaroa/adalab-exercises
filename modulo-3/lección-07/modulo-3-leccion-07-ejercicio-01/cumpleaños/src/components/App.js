@@ -3,7 +3,7 @@ import Birthday from "./Birthday";
 import "../stylesheets/App.scss";
 
 const App = (props) => {
-  const [counter, setCounter] = useState(0);
+  const [counter, setCounter] = useState(20);
   const handleCount = () => {
     setCounter(counter + 1);
   };
