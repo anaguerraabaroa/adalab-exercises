@@ -3,7 +3,7 @@ import Birthday from "./Birthday";
 import Gifts from "./Gifts";
 import "../stylesheets/App.scss";
 
-const App = () => {
+const App = (props) => {
   const [counter, setCounter] = useState(0);
   const [giftsCounter, setGiftCounter] = useState(0);
   const handleCount = () => {
