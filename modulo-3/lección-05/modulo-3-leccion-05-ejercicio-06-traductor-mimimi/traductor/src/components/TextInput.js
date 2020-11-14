@@ -1,38 +1,30 @@
 import React from "react";
 import MIMIMITranslator from "./MIMIMITranslator";
-import "../stylesheets/_TextInput.scss";
 
-class TextInput extends React.Component {
-  constructor(props) {
-    super(props);
-    this.handleChange = this.handleChange.bind(this);
-  }
-
-  handleChange(ev) {
-    const textArea = ev.target.value;
-    this.text = textArea;
-    this.props.handleClick(textArea);
-  }
-
-  render() {
-    return (
-      <>
-        <form className="form">
-          <label htmlFor="comments" className="comments">
-            Comentarios:
-          </label>
-          <textarea
-            id="comments"
-            name="comments"
-            rows="8"
-            cols="80"
-            onChange={this.handleChange}
-          ></textarea>
-          <MIMIMITranslator textValue={this.text}></MIMIMITranslator>
-        </form>
-      </>
-    );
-  }
-}
+const TextInput = (props) => {
+  // console props to verify that information from App function is reaching TextInput
+  // console.log(props.handleInput);
+  const handleChange = (ev) => {
+    // console.log("Me han cambiado", ev.target.value);
+    const inputValue = ev.target.value;
+    //console.log(inputValue);
+    props.handleInput(inputValue);
+  };
+  return (
+    <>
+      <label htmlFor="input" className="label">
+        Incluye aquí tu texto:
+      </label>
+      <input
+        id="input"
+        type="text"
+        className="input"
+        placeholder="Texto"
+        onChange={handleChange}
+      />
+      <MIMIMITranslator value={props.value} />
+    </>
+  );
+};
 
 export default TextInput;
