@@ -40,18 +40,31 @@ const Form = (props) => {
         <label htmlFor="select" className="label">
           Selecciona idioma:
         </label>
-        <select id="select" name="select" className="select">
+        <select
+          id="select"
+          value={props.language}
+          name="select"
+          className="select"
+          onChange={handleChange}
+        >
           <option value="" disabled>
             Idioma
           </option>
-          <option value="Español">Español</option>
-          <option value="Inglés">Inglés</option>
-          <option value="Portugués">Portugués</option>
+          <option id="language" value="Español">
+            Español
+          </option>
+          <option id="language" value="Inglés">
+            Inglés
+          </option>
+          <option id="language" value="Portugués">
+            Portugués
+          </option>
         </select>
       </form>
       <article className="card">
-        <h2 className="film__title">Título:{props.title}</h2>
-        <p className="film__description">Sinopsis:{props.description}</p>
+        <h2 className="film__title">Título: {props.title}</h2>
+        <p className="film__description">Sinopsis: {props.description}</p>
+        <p className="film__language">Idioma: {props.language}</p>
       </article>
     </section>
   );
