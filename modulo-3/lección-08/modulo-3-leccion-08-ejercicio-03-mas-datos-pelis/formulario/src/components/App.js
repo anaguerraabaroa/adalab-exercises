@@ -4,8 +4,8 @@ import "../stylesheets/App.scss";
 
 const App = () => {
   const [title, setTitle] = useState("");
-  const [description, setdescription] = useState("");
-  const [language, setlanguage] = useState("");
+  const [description, setDescription] = useState("");
+  const [language, setLanguage] = useState("");
   const [age, setAge] = useState("");
   const [genres, setGenres] = useState("");
 
@@ -14,9 +14,9 @@ const App = () => {
     if (id === "title") {
       setTitle(value);
     } else if (id === "description") {
-      setdescription(value);
+      setDescription(value);
     } else if (id === "select") {
-      setlanguage(value);
+      setLanguage(value);
     } else if (name === "age") {
       setAge(value);
     } else if (name === "genres") {

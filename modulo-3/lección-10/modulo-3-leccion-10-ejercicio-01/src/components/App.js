@@ -7,8 +7,7 @@ import UserList from "./UserList";
 
 class App extends React.Component {
   render() {
-
-    const handleFilter = () => { };
+    const handleFilter = () => {};
 
     return (
       <div className="App">
