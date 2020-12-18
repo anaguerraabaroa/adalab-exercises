@@ -2,11 +2,11 @@
 
 # **AdalabExercises**
 
-Exercises developed in the Adalab Digital Frontend Development Bootcamp
+Exercises developed in the Adalab Digital Frontend Development Bootcamp.
 
-## **Distribution**
+## **Structure**
 
-Bootcamp covers three modules with fourteen lessons per module and a list of exercises each lesson.
+Frontend Development Bootcamp covers three modules with fourteen lessons per module and a list of exercises each lesson.
 
 ### **Module 1: HTML and CSS**
 
@@ -70,4 +70,4 @@ React
 
 ## **Exercises Intructions**
 
-Instructions of the exercises can be found in each lesson [**here**](https://books.adalab.es/materiales-front-end-k/)
+Instructions of each lesson exercises can be found [**here**](https://books.adalab.es/materiales-front-end-k/).
