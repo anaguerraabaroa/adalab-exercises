@@ -18,7 +18,7 @@ Bootcamp covers three modules with fourteen lessons per module and a list of exe
 - Lesson 1.6: Responsive design
 - Lesson 1.7: Web publishing
 - Lesson 1.8: Version control system
-- Lesson 1.9: Automate and enhance workflow
+- Lesson 1.9: Workflow automation
 - Lesson 1.10: SASS
 - Lesson 1.11: Forms
 - Lesson 1.12: Grid
