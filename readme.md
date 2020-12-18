@@ -8,7 +8,7 @@ Exercises developed in the Adalab Digital Frontend Development Bootcamp
 
 Bootcamp covers three modules with fourteen lessons per module and a list of exercises each lesson.
 
-#### **Module 1: HTML and CSS**
+### **Module 1: HTML and CSS**
 
 ```
 HTML and CSS
@@ -28,7 +28,7 @@ HTML and CSS
 └── Lesson 1.14: Web accesibility and design systems
 ```
 
-#### **Module 2: JavaScript**
+### **Module 2: JavaScript**
 
 ```
 JavaScript
@@ -48,7 +48,7 @@ JavaScript
 └── Lesson 2.14: Asynchrony and timers
 ```
 
-#### **Module 3: React**
+### **Module 3: React**
 
 ```
 React
