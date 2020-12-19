@@ -68,6 +68,6 @@ React
 └── Lesson 3.14: Refactoring
 ```
 
-## **Exercises Intructions**
+## **Exercises intructions**
 
 Instructions of each lesson exercises can be found [**here**](https://books.adalab.es/materiales-front-end-k/).
