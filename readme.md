@@ -75,3 +75,7 @@ React
 ## **Exercises intructions**
 
 Instructions of each lesson exercises can be found [**here**](https://books.adalab.es/materiales-front-end-k/).
+
+## **License**
+
+These exercises are licensed under [MIT License](https://spdx.org/licenses/MIT.html).
