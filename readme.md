@@ -78,4 +78,4 @@ Instructions of each lesson exercises can be found [**here**](https://books.adal
 
 ## **License**
 
-These exercises are licensed under [MIT License](https://spdx.org/licenses/MIT.html).
+These exercises are licensed under [**MIT License**](https://spdx.org/licenses/MIT.html).
