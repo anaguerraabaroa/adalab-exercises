@@ -6,7 +6,7 @@ Exercises developed in the Adalab Digital Frontend Development Bootcamp.
 
 ## **Technologies**
 
-[<img src = "https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white">](https://html.spec.whatwg.org/) [<img src = "https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white">](https://www.w3.org/Style/CSS/) [<img src = "https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black">](https://www.ecma-international.org/ecma-262/) and [<img src = "https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=black">](https://es.reactjs.org/)
+[<img src = "https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white">](https://html.spec.whatwg.org/) [<img src = "https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white">](https://www.w3.org/Style/CSS/) [<img src = "https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black">](https://www.ecma-international.org/ecma-262/) [<img src = "https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=black">](https://es.reactjs.org/) and [<img src = "https://img.shields.io/badge/-Node.js-339933?style=flat&logo=node.js&logoColor=white">](https://nodejs.org/es/)
 
 ## **Structure**
 
@@ -72,9 +72,29 @@ React
 └── Lesson 3.14: Refactoring
 ```
 
+### **Module 4: Node.js**
+
+```
+Node.js
+├── Lesson 4.0: Module intro
+├── Lesson 4.1.1: Front and back communication
+├── Lesson 4.1.2: Node JS intro
+├── Lesson 4.1.3: Node JS modules
+├── Lesson 4.1.4: Nodemon
+├── Lesson 4.2.1: Express JS intro
+├── Lesson 4.2.2: Postman
+├── Lesson 4.2.3: Query params requests
+├── Lesson 4.2.4: Body params requests
+├── Lesson 4.2.5: URL params requests
+├── Lesson 4.2.6: Response types
+├── Lesson 4.3.1: Static servers
+└── Lesson 4.3.2: Template engines
+```
+
 ## **Exercises intructions**
 
-Instructions of each lesson exercises can be found [**here**](https://books.adalab.es/materiales-front-end-k/).
+- Instructions for module 1-3 lesson exercises can be found [**here**](https://books.adalab.es/materiales-front-end-k/).
+- Instructions for module 4 lesson exercises can be found [**here**](https://books.adalab.es/materiales-front-end-l/).
 
 ## **License**
 
