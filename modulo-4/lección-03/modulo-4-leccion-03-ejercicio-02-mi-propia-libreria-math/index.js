@@ -5,7 +5,7 @@ const math = require("./math.js");
 const num1 = 4;
 const num2 = 2;
 
-// Functions
+// Methods
 const sum = math.sum(num1, num2);
 const substract = math.substract(num1, num2);
 
