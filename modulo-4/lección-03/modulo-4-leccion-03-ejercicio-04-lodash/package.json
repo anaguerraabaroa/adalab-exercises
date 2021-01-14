@@ -1,0 +1,14 @@
+{
+  "name": "modulo-4-leccion-03-ejercicio-04-lodash",
+  "version": "1.0.0",
+  "description": "lodash",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ana Guerra Abaroa",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.20"
+  }
+}
