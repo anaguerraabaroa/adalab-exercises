@@ -45,7 +45,9 @@ server.get("/users", (req, res) => {
   const filteredNames = req.query.filterName;
   for (let i = 0; i < users.length; i++) {
     if (users[i].name.includes(filteredNames)) {
-      filteredUsers.push(filteredNames);
+      if (!filteredUsers.includes(filteredNames)) {
+        filteredUsers.push(users[i].name);
+      }
     }
   }
   res.json({

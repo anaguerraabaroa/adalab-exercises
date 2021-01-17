@@ -42,17 +42,24 @@ server.post("/user", (req, res) => {
 });
 
 server.get("/users", (req, res) => {
-  const name = req.query.filterName;
-  const email = req.query.filterEmail;
+  const filteredName = req.query.filterName;
+  const filteredEmail = req.query.filterEmail;
   for (let i = 0; i < users.length; i++) {
     if (
-      users[i].name.toUpperCase().includes(name.toUpperCase()) &&
-      users[i].email.toUpperCase().includes(email.toUpperCase())
+      users[i].name.includes(filteredName) &&
+      users[i].email.includes(filteredEmail)
     ) {
-      filteredUsers.push({
-        name: users[i].name,
-        email: users[i].email,
-      });
+      if (
+        !filteredUsers.includes({
+          name: filteredName,
+          email: filteredEmail,
+        })
+      ) {
+        filteredUsers.push({
+          name: users[i].name,
+          email: users[i].email,
+        });
+      }
     }
   }
   res.json({
