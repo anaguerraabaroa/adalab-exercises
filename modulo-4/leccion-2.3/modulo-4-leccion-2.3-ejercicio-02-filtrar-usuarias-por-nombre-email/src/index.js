@@ -49,17 +49,10 @@ server.get("/users", (req, res) => {
       users[i].name.includes(filteredName) &&
       users[i].email.includes(filteredEmail)
     ) {
-      if (
-        !filteredUsers.includes({
-          name: filteredName,
-          email: filteredEmail,
-        })
-      ) {
-        filteredUsers.push({
-          name: users[i].name,
-          email: users[i].email,
-        });
-      }
+      filteredUsers.push({
+        name: users[i].name,
+        email: users[i].email,
+      });
     }
   }
   res.json({
