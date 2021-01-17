@@ -45,13 +45,14 @@ server.get("/users", (req, res) => {
   const name = req.query.filterName;
   const email = req.query.filterEmail;
   for (let i = 0; i < users.length; i++) {
-    if (users[i].name.includes(name) && users[i].email.includes(email)) {
+    if (
+      users[i].name.toUpperCase().includes(name.toUpperCase()) &&
+      users[i].email.toUpperCase().includes(email.toUpperCase())
+    ) {
       filteredUsers.push({
         name: users[i].name,
         email: users[i].email,
       });
-    } else {
-      filteredUsers;
     }
   }
   res.json({
