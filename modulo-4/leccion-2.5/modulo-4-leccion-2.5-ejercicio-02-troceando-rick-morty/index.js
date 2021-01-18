@@ -29,19 +29,23 @@ app.get("/users/:userId", (req, res) => {
   }
 });
 
-app.get("/users/:userId/:episodes", (req, res) => {
-  console.log("Url params:", req.params);
-  console.log("Url param userId:", req.params.userId);
-  console.log("Url param episodes:", req.params.episodes);
+// To review
+// app.get("/users/:userId/:episodes", (req, res) => {
+//   console.log("Url params:", req.params);
+//   console.log("Url param userId:", req.params.userId);
+//   console.log("Url param episodes:", req.params.episodes);
 
-  const episodes = users.find(
-    (user) => user.episode.length === req.params.episodes
-  );
-  console.log("Found user:", episodes);
+//   const user = users.find((user) => user.id === parseInt(req.params.userId));
+//   console.log("Found user:", user);
 
-  if (episodes === undefined) {
-    res.json({ error: "episodes-not-found" });
-  } else {
-    res.json(episodes);
-  }
-});
+//   const episodes = users.find(
+//     (user) => user.episode.length === req.params.episode
+//   );
+//   console.log("Found episodes:", episodes);
+
+//   if (user === undefined || episodes === undefined) {
+//     res.json({ error: "not-found" });
+//   } else {
+//     res.json(episodes);
+//   }
+// });
