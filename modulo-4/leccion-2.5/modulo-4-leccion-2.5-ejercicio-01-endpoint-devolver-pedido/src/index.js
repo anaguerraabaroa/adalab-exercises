@@ -33,8 +33,10 @@ app.get("/users/:userId/orders/:orderId", (req, res) => {
   console.log("Found order:", order);
 
   // response with selected user data or error
-  if (user === undefined || order === undefined) {
-    res.json({ error: "not-found" });
+  if (user === undefined) {
+    res.json({ error: "user-not-found" });
+  } else if (order === undefined) {
+    res.json({ error: "order-not-found" });
   } else {
     res.json(user);
   }
