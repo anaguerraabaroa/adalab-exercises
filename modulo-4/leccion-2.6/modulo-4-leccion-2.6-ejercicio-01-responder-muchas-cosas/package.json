@@ -1,0 +1,16 @@
+{
+  "name": "modulo-4-leccion-2.6-ejercicio-01-responder-muchas-cosas",
+  "version": "1.0.0",
+  "description": "types of responses exercise",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "author": "Ana Guerra Abaroa",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
