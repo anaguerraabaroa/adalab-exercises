@@ -15,13 +15,16 @@ app.listen(serverPort, () => {
   console.log(`App listening at http://localhost:${serverPort}`);
 });
 
+// get user function
 app.get("/users/:userId", (req, res) => {
   console.log("Url params:", req.params);
   console.log("Url param userId:", req.params.userId);
 
+  // get user by id
   const user = users.find((user) => user.id === parseInt(req.params.userId));
   console.log("Found user:", user);
 
+  // response with selected data or error
   if (user === undefined) {
     res.json({ error: "user-not-found" });
   } else {
@@ -29,23 +32,31 @@ app.get("/users/:userId", (req, res) => {
   }
 });
 
-// To review
-// app.get("/users/:userId/:episodes", (req, res) => {
-//   console.log("Url params:", req.params);
-//   console.log("Url param userId:", req.params.userId);
-//   console.log("Url param episodes:", req.params.episodes);
+// get user and number of episodes function
+app.get("/users/:userId/:episodes", (req, res) => {
+  console.log("Url params:", req.params);
+  console.log("Url param userId:", req.params.userId);
+  console.log("Url param episodes:", req.params.episodes.length);
 
-//   const user = users.find((user) => user.id === parseInt(req.params.userId));
-//   console.log("Found user:", user);
+  // get user by id
+  const user = users.find((user) => user.id === parseInt(req.params.userId));
+  console.log("Found user:", user);
 
-//   const episodes = users.find(
-//     (user) => user.episode.length === req.params.episode
-//   );
-//   console.log("Found episodes:", episodes);
+  // get number of episodes by user
+  const episodes = users.find(
+    (user) => user.episode.length === req.params.episodes.length
+  );
+  console.log("Found episodes:", episodes);
 
-//   if (user === undefined || episodes === undefined) {
-//     res.json({ error: "not-found" });
-//   } else {
-//     res.json(episodes);
-//   }
-// });
+  // response with selected data or error
+  if (user === undefined) {
+    res.json({ error: "user-not-found" });
+  } else if (episodes === undefined) {
+    res.json({ error: "episodes-not-found" });
+  } else {
+    res.json({
+      user: user,
+      episodesNumber: user.episode.length,
+    });
+  }
+});
