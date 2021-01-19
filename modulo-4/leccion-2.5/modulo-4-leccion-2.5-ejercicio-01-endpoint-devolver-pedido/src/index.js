@@ -15,7 +15,7 @@ app.listen(serverPort, () => {
   console.log(`App listening at http://localhost:${serverPort}`);
 });
 
-app.get("/users/:userId/:orderId", (req, res) => {
+app.get("/users/:userId/orders/:orderId", (req, res) => {
   console.log("Url params:", req.params);
   console.log("Url param userId:", req.params.userId);
   console.log("Url params orderId", req.params.orderId);

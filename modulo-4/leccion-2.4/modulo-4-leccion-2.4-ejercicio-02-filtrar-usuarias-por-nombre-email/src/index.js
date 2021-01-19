@@ -45,10 +45,7 @@ server.post("/users", (req, res) => {
   const name = req.body.filterByName;
   const email = req.body.filterByEmail;
   for (let i = 0; i < users.length; i++) {
-    if (
-      users[i].name.toUpperCase().includes(name.toUpperCase()) &&
-      users[i].email.toUpperCase().includes(email.toUpperCase())
-    ) {
+    if (users[i].name.includes(name) && users[i].email.includes(email)) {
       filteredUsers.push({
         name: users[i].name,
         email: users[i].email,
