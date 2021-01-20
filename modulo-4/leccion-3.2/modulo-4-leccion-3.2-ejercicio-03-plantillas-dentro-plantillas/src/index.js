@@ -1,6 +1,6 @@
-const express = require('express');
-const cors = require('cors');
-const films = require('./films-data.json');
+const express = require("express");
+const cors = require("cors");
+const films = require("./films-data.json");
 
 // create app server
 const app = express();
@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(cors());
 
 // set template engine middlewares
-app.set('view engine', 'ejs');
+app.set("view engine", "ejs");
 
 // init express aplication
 const serverPort = 3000;
@@ -20,15 +20,15 @@ app.listen(serverPort, () => {
 
 // endpoints
 
-app.get('/es/film:filmId.html', (req, res) => {
+app.get("/es/film:filmId.html", (req, res) => {
   // get film data
-  const filmData = films.find(film => film.id === req.params.filmId);
-  console.log('film data', filmData);
+  const filmData = films.find((film) => film.id === req.params.filmId);
+  console.log("film data", filmData);
 
   // response with rendered template
   if (filmData) {
-    res.render('pages/film', filmData);
+    res.render("pages/film", filmData);
   } else {
-    res.render('pages/film-not-found');
+    res.render("pages/film-not-found");
   }
 });

@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const users = require("./data.json");
 
 // create server
 const app = express();
@@ -50,27 +51,22 @@ app.get("/response-c", (req, res) => {
   }
 });
 
-// To review
 // response-d: query params JSON response
-// app.post("/user", (req, res) => {
-//   console.log("Query params:", req.query);
-//   console.log("Query param userName:", req.query.userId);
+app.get("/user/:userId", (req, res) => {
+  const userParams = users.find(
+    (user) => user.id === parseInt(req.params.userId)
+  );
+  console.log("userParams", userParams);
 
-//   users.push({ id: req.query.userId });
-
-//   res.json({
-//     result: "User created",
-//   });
-// });
-
-// app.get("/response-c", (req, res) => {
-//   if (req.query.userId === 1 || req.query.userId === 2) {
-//     res.status(200).json({
-//       result: "ok",
-//     });
-//   } else {
-//     res.status(404).json({
-//       result: "error: invalid query param",
-//     });
-//   }
-// });
+  if (userParams) {
+    res.status(200);
+    res.json({
+      result: "ok",
+    });
+  } else {
+    res.status(404);
+    res.json({
+      result: "error: invalid query param",
+    });
+  }
+});
