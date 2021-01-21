@@ -1,6 +1,5 @@
 const express = require("express");
 const cors = require("cors");
-const users = require("./data.json");
 
 // create server
 const app = express();
@@ -52,13 +51,13 @@ app.get("/response-c", (req, res) => {
 });
 
 // response-d: query params JSON response
-app.get("/user/:userId", (req, res) => {
-  const userParams = users.find(
-    (user) => user.id === parseInt(req.params.userId)
-  );
+app.get("/user", (req, res) => {
+  const userParams = {
+    user: req.query.user,
+  };
   console.log("userParams", userParams);
 
-  if (userParams) {
+  if (userParams.user === "1" || userParams.user === "2") {
     res.status(200);
     res.json({
       result: "ok",
