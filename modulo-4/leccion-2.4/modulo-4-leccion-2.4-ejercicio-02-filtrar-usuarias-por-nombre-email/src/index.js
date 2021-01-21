@@ -41,18 +41,13 @@ server.post("/user", (req, res) => {
 });
 
 server.post("/users", (req, res) => {
-  const filteredUsers = [];
-  const name = req.body.filterByName;
-  const email = req.body.filterByEmail;
-  for (let i = 0; i < users.length; i++) {
-    if (users[i].name.includes(name) && users[i].email.includes(email)) {
-      filteredUsers.push({
-        name: users[i].name,
-        email: users[i].email,
-      });
-    }
-  }
+  const filteredName = req.body.filterByName;
+  const filteredEmail = req.body.filterByEmail;
+  const filteredUser = users
+    .filter((user) => user.name.includes(filteredName))
+    .filter((user) => user.email.includes(filteredEmail));
+
   res.json({
-    result: filteredUsers,
+    result: filteredUser,
   });
 });
