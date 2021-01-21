@@ -41,7 +41,9 @@ server.post("/user", (req, res) => {
 // get user by name from data base
 server.get("/users", (req, res) => {
   const filteredNames = req.query.filterByName;
-  const filteredUser = users.find((user) => user.name === filteredNames);
+  const filteredUser = users.find((user) =>
+    user.name.toLowerCase().includes(filteredNames.toLowerCase())
+  );
   res.json({
     result: filteredUser,
   });

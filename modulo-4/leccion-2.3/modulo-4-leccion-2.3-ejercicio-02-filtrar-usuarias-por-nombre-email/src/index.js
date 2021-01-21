@@ -44,8 +44,12 @@ server.get("/users", (req, res) => {
   const filteredName = req.query.filterByName;
   const filteredEmail = req.query.filterByEmail;
   const filteredUser = users
-    .filter((user) => user.name.includes(filteredName))
-    .filter((user) => user.email.includes(filteredEmail));
+    .filter((user) =>
+      user.name.toLowerCase().includes(filteredName.toLowerCase())
+    )
+    .filter((user) =>
+      user.email.toLowerCase().includes(filteredEmail.toLowerCase())
+    );
 
   res.json({
     result: filteredUser,
