@@ -21,7 +21,6 @@ server.use(express.static(staticServerPath));
 // users
 
 const users = []; // fake users data base
-const filteredUsers = [];
 
 // api endpoints
 
@@ -43,14 +42,8 @@ server.post("/user", (req, res) => {
 
 server.post("/users", (req, res) => {
   const filteredNames = req.body.filterByName;
-  for (let i = 0; i < users.length; i++) {
-    if (users[i].name.includes(filteredNames)) {
-      if (!filteredUsers.includes(filteredNames)) {
-        filteredUsers.push(users[i].name);
-      }
-    }
-  }
+  const filteredUser = users.find((user) => user.name === filteredNames);
   res.json({
-    result: filteredUsers,
+    result: filteredUser,
   });
 });

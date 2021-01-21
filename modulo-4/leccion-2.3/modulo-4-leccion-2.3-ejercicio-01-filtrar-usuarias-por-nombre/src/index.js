@@ -18,10 +18,8 @@ server.listen(serverPort, () => {
 const staticServerPath = "./public";
 server.use(express.static(staticServerPath));
 
-// users
-
-const users = []; // fake users data base
-const filteredUsers = [];
+// fake data base
+const users = [];
 
 // api endpoints
 
@@ -29,7 +27,6 @@ server.post("/user", (req, res) => {
   console.log("Query params:", req.query);
   console.log("Query param userName:", req.query.userName);
   console.log("Query param userEmail:", req.query.userEmail);
-  console.log("Query param filterName:", req.query.filterName);
 
   // add new user to daba base
   users.push({
@@ -41,16 +38,11 @@ server.post("/user", (req, res) => {
   });
 });
 
+// get user by name from data base
 server.get("/users", (req, res) => {
-  const filteredNames = req.query.filterName;
-  for (let i = 0; i < users.length; i++) {
-    if (users[i].name.includes(filteredNames)) {
-      if (!filteredUsers.includes(filteredNames)) {
-        filteredUsers.push(users[i].name);
-      }
-    }
-  }
+  const filteredNames = req.query.filterByName;
+  const filteredUser = users.find((user) => user.name === filteredNames);
   res.json({
-    result: filteredUsers,
+    result: filteredUser,
   });
 });
