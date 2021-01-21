@@ -40,6 +40,7 @@ server.post("/user", (req, res) => {
   });
 });
 
+// get user from data base
 server.post("/users", (req, res) => {
   const filteredNames = req.body.filterByName;
   const filteredUser = users.find((user) => user.name === filteredNames);
