@@ -91,7 +91,7 @@ Node.js
 └── Lesson 4.3.2: Template engines
 ```
 
-## **Exercises intructions**
+## **Exercises requirements**
 
 - Requirements for module 1-3 lesson exercises can be found [**here**](https://books.adalab.es/materiales-front-end-k/).
 - Requirements for module 4 lesson exercises can be found [**here**](https://books.adalab.es/materiales-front-end-l/).
