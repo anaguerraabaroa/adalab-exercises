@@ -93,8 +93,8 @@ Node.js
 
 ## **Exercises intructions**
 
-- Instructions for module 1-3 lesson exercises can be found [**here**](https://books.adalab.es/materiales-front-end-k/).
-- Instructions for module 4 lesson exercises can be found [**here**](https://books.adalab.es/materiales-front-end-l/).
+- Requirements for module 1-3 lesson exercises can be found [**here**](https://books.adalab.es/materiales-front-end-k/).
+- Requirements for module 4 lesson exercises can be found [**here**](https://books.adalab.es/materiales-front-end-l/).
 
 ## **License**
 
