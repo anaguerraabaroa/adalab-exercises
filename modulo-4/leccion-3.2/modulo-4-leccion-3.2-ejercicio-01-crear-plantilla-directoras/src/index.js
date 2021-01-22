@@ -47,7 +47,6 @@ app.get("/es/directora/:directorId", (req, res) => {
         .replace(" ", "-")
         .toLowerCase() === req.params.directorId.toLowerCase()
   );
-
   console.log("director data", directorData);
 
   // response with rendered template
