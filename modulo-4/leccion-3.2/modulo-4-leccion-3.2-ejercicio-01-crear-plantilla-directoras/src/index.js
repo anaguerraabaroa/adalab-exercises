@@ -37,8 +37,17 @@ app.get("/es/film:filmId.html", (req, res) => {
 app.get("/es/directora/:directorId", (req, res) => {
   // get director data
   const directorData = directors.find(
-    (director) => director.id === parseInt(req.params.directorId)
+    (director) =>
+      director.name
+        .replace(/[á]/g, "a")
+        .replace(/[é]/g, "e")
+        .replace(/[í]/g, "i")
+        .replace(/[ó]/g, "o")
+        .replace(/[ú]/g, "u")
+        .replace(" ", "-")
+        .toLowerCase() === req.params.directorId.toLowerCase()
   );
+
   console.log("director data", directorData);
 
   // response with rendered template
