@@ -72,7 +72,7 @@ React
 └── Lesson 3.14: Refactoring
 ```
 
-### **Module 4: Node.js** (in progress)
+### **Module 4: Node.js**
 
 ```
 Node.js
