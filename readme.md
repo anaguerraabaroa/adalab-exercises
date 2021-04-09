@@ -91,11 +91,6 @@ Node.js
 └── Lesson 4.3.2: Template engines
 ```
 
-## **Exercises requirements**
-
-- Module 1-3 exercises requirements can be found [**here**](https://books.adalab.es/materiales-front-end-k/)
-- Module 4 exercises requirements can be found [**here**](https://books.adalab.es/materiales-front-end-l/).
-
 ## **License**
 
 These exercises are licensed under [**MIT License**](https://spdx.org/licenses/MIT.html).
