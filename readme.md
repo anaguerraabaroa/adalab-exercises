@@ -6,13 +6,14 @@ Exercises developed in the Adalab Digital Frontend Development Bootcamp.
 
 ## **Technologies**
 
-[<img src = "https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white">](https://html.spec.whatwg.org/) [<img src = "https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white">](https://www.w3.org/Style/CSS/) [<img src = "https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black">](https://www.ecma-international.org/ecma-262/) [<img src = "https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=black">](https://es.reactjs.org/) and [<img src = "https://img.shields.io/badge/-Node.js-339933?style=flat&logo=node.js&logoColor=white">](https://nodejs.org/es/)
+[<img src = "https://img.shields.io/badge/-HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">](https://html.spec.whatwg.org/) [<img src="https://img.shields.io/badge/-SASS-cc6699?style=for-the-badge&logo=sass&logoColor=ffffff">](https://sass-lang.com/)
+[<img src = "https://img.shields.io/badge/-CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">](https://www.w3.org/Style/CSS/) [<img src = "https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">](https://www.ecma-international.org/ecma-262/) [<img src = "https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black">](https://es.reactjs.org/) [<img src = "https://img.shields.io/badge/-Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white">](https://nodejs.org/es/) and [<img src = "https://img.shields.io/badge/-Express-000000?style=for-the-badge&logo=express&logoColor=white">](https://expressjs.com/es/)
 
 ## **Structure**
 
 Frontend Development Bootcamp covers three modules with fourteen lessons per module and a list of exercises each lesson.
 
-### **Module 1: HTML and CSS**
+### **Module 1: HTML & CSS**
 
 ```
 HTML and CSS
@@ -72,7 +73,7 @@ React
 └── Lesson 3.14: Refactoring
 ```
 
-### **Module 4: Node.js**
+### **Module 4: Node.js & Express.js**
 
 ```
 Node.js
@@ -93,4 +94,4 @@ Node.js
 
 ## **License**
 
-These exercises are licensed under [**MIT License**](https://spdx.org/licenses/MIT.html).
+This project is licensed under ![GitHub](https://img.shields.io/github/license/anaguerraabaroa/random-number?label=License&logo=MIT&style=for-the-badge)
