@@ -1,11 +1,10 @@
 "use strict";
 const nameLengthElement = document.querySelector(".name_length");
-const name = "Ana Castrillo";
-const nameLength = 12;
+const adalaberName = "Ana Castrillo";
 nameLengthElement.innerHTML = `<p class="name_length">
-    El nombre de mi compañera es <span>${name}</span>, y está compuesto por
-    <span>${nameLength}</span> caracteres
+    El nombre de mi compañera es <span>${adalaberName}</span>, y está compuesto por
+    <span>${adalaberName.length}</span> caracteres
   </p>`;
 console.log(
-  `El nombre de mi compañera es ${name} y está compuesto por ${nameLength} caracteres`
+  `El nombre de mi compañera es ${adalaberName} y está compuesto por ${adalaberName.length} caracteres`
 );
